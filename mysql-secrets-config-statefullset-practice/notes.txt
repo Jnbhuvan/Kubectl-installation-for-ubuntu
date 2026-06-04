@@ -1,0 +1,31 @@
+Firstly clone the repo and enter this folder 
+
+run in the cmd:
+
+kubectl apply -f secrets.yml
+
+kubectl apply -f config-map.yml
+
+kubectl apply -f service.yml
+
+kubectl apply -f StatefulSet.yml
+
+kubectl get pods -n mysql
+
+copy the pod name been displayed
+
+type the following in the terminal
+
+kubectl exec -it podname -n mysql -- bash
+
+mysql -u root -p
+
+root@123 or check in the secrets file
+
+show databases;
+
+exit
+
+exit 
+
+these are the commands that needs to be typed in the terminal for practice the mysql statefulset practice of kubernetes tutorial 
